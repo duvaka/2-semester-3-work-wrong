@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Девин Дмитрий ТКБО-02-22 (Верстка: 2 семестр, работа 2)</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo"></div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__list">
+                  <li>
+                    <a href="#first-link" class="header__links"><h3>Портфолио</h3></a>
+                  </li>
+                  <li>
+                    <a href="#second-link" class="header__links"><h3>Обо мне</h3></a>
+                  </li>
+                </ul>
+            </nav>
+            <button class="button" id="open-modal-btn"><h3>Заказать дизайн</h3></button>
+            <div class="header__burger" id="burger"></div>
+        </div>
+    </header>
+    <div class="modal" id="brif-modal">
+      <div class="modal__container container">
+        <div class="modal__headline">
+          <h1>Бриф на дизайн</h1>
+          <div class="modal__img" id="close-modal-btn">
+            <img src="/img/Icon_Close.svg" alt="">
+          </div>
+        </div>
+        <div class="modal__phone-number">
+          <h2>Номер телефона</h2>
+          <input class="input" type="tel" placeholder="+7 999 888 77 66">
+        </div>
+        <div class="modal__textarea">
+          <h2>О проекте</h2>
+          <textarea class="input_textarea" placeholder="Напишите пару слов о проекте"></textarea>
+        </div>
+        <button class="button" type="submit"><h3>Отправить</h3></button>
+      </div>
+    </div>
+    <sec class="slider">
+        <div class="slider__container container">
+            <div class="slider__slider">
+                <img class="slider__img" src="/img/Banner_1.png" alt="">
+            </div>
+            <div class="slider__dots">
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+            </div>
+        </div>
+    </sec>
+    <sec class="portfolio">
+        <div class="portfolio__container container">
+          <div class="headline">
+            <h1 id="first-link">Портфолио</h1>
+          </div>
+          <div class="portfolio__tabs">
+            <button class="portfolio__tab active" data-category="design-websites">
+              <h2>Дизайн сайтов</h2>
+            </button>
+            <button class="portfolio__tab" data-category="logos">
+              <h2>Логотипы</h2>
+            </button>
+          </div>
+      
+          <div class="portfolio__filters" id="design-websites-filters">
+            <button class="portfolio__filter active" data-category="internet">
+              <h3>Интернет-магазин</h3>
+            </button>
+            <button class="portfolio__filter" data-category="corporate">
+              <h3>Корпоративные сайты</h3>
+            </button>
+          </div>
+      
+          <div class="portfolio__filters" id="logos-filters" style="display: none;">
+            <button class="portfolio__filter active" data-category="sports">
+              <h3>Спортивные</h3>
+            </button>
+            <button class="portfolio__filter" data-category="entertainment">
+              <h3>Развлечение</h3>
+            </button>
+          </div>
+      
+          <div class="portfolio__works" id="design-websites-internet-gallery">
+            <div class="portfolio__work" data-category="internet">
+              <img class="portfolio__img" src="/img/Web, store, 1.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="internet">
+              <img class="portfolio__img" src="/img/Web, store, 2.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="internet">
+              <img class="portfolio__img" src="/img/Web, store, 3.png" alt="">
+            </div>
+            <div class="portfolio__work portfolio__work_med" data-category="internet">
+              <img class="portfolio__img" src="/img/Web, store, 4.png" alt="">
+            </div>
+            <div class="portfolio__work portfolio__work_med" data-category="internet">
+              <img class="portfolio__img" src="/img/Web, store, 5.png" alt="">
+            </div>
+          </div>
+
+          <div class="portfolio__works" id="design-websites-corporate-gallery" style="display:none">
+            <div class="portfolio__work" data-category="corporate">
+                <img class="portfolio__img" src="/img/Web, corporate, 1.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="corporate">
+                <img class="portfolio__img" src="/img/Web, corporate, 2.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="corporate">
+                <img class="portfolio__img" src="/img/Web, corporate, 3.png" alt="">
+            </div>
+          </div>
+      
+          <div class="portfolio__works" id="logos-sports-gallery" style="display:none">
+            <div class="portfolio__work" data-category="sports">
+              <img class="portfolio__img" src="/img/Logo 1.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="sports">
+              <img class="portfolio__img" src="/img/Logo 2.png" alt="">
+            </div>
+            <div class="portfolio__work" data-category="sports">
+              <img class="portfolio__img" src="/img/Logo 3.png" alt="">
+            </div>
+          </div>
+      
+          <div class="portfolio__works" id="logos-entertainment-gallery" style="display: none;">
+            <div class="portfolio__work portfolio__work_med" data-category="entertainment">
+              <img class="portfolio__img" src="/img/Logo 4.png" alt="">
+            </div>
+            <div class="portfolio__work portfolio__work_med" data-category="entertainment">
+              <img class="portfolio__img" src="/img/Logo 5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </sec>
+      <sec class="about">
+        <div class="about__container container">
+          <div class="headline"><h1 id="second-link">Обо мне</h1>
+          </div>
+          <div class="about__acordions">
+            <div class="acordion">
+              <div class="acordion__title">
+                <h2>Услуги</h2>
+                <div class="acordion__img">
+                  <img src="/img/Icon_Arrow_Down.svg" alt="">
+                  <img src="/img/Icon_Arrow_Up.svg" alt="" style="display: none;">
+                </div>
+              </div>
+              <h4 style="display: none;">Услуги нашей студии веб-дизайна включают создание эффективных и привлекательных веб-сайтов, разработку уникального корпоративного стиля и логотипов, а также оптимизацию пользовательского опыта для повышения конверсии.</h4>
+            </div>
+            <div class="acordion">
+              <div class="acordion__title">
+                <h2>Преимущества</h2>
+                <div class="acordion__img">
+                  <img src="/img/Icon_Arrow_Down.svg" alt="">
+                  <img src="/img/Icon_Arrow_Up.svg" alt="" style="display: none;">
+                </div>
+              </div>
+              <h4 style="display: none;">Одним из наших преимуществ является глубокое понимание веб-дизайна и последних тенденций в отрасли. Мы всегда следим за новыми технологиями и инновациями, чтобы предложить вам передовые решения, которые соответствуют вашим целям и потребностям.</h4>
+            </div>
+            <div class="acordion">
+              <div class="acordion__title">
+                <h2>О нашей команде</h2>
+                <div class="acordion__img">
+                  <img src="/img/Icon_Arrow_Down.svg" alt="">
+                  <img src="/img/Icon_Arrow_Up.svg" alt="" style="display: none;">
+                </div>
+              </div>
+              <h4 style="display: none;">Наша команда состоит из талантливых и опытных профессионалов, которые страстно относятся к своей работе. Мы работаем с каждым клиентом индивидуально, чтобы полностью понять его бизнес и достичь максимального результата. Наша цель - помочь вам достичь успеха в онлайн-мире и создать неповторимый и привлекательный веб-присутствие.</h4>
+            </div>
+          </div>
+      </div>
+    </sec>
+    <footer class="footer">
+      <div class="footer__container container">
+          <h4 style="text-align: center;">©DevinDmitry 2020-2023</h4>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
